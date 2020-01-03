@@ -84,7 +84,7 @@ class Sunburst extends React.Component {
         current.fill = current.parent.fill.brighter(0.5);
         const hsl = d3.hsl(current.fill);
         hue = hueDXScale(current.x0);
-        const colorshift = hsl.h + (hue / 4);
+        const colorshift = hsl.h + (hue / 7);
         return d3.hsl(colorshift, hsl.s, hsl.l);
       })
       .attr('stroke', '#fff')
